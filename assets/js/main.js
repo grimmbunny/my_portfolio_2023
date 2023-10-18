@@ -8,9 +8,33 @@ const scrollHeader = () =>{
 window.addEventListener('scroll', scrollHeader)
 
 /*=============== SERVICES MODAL ===============*/
-const modalViews = document.querySelectorAll('.services__modal')
-const modalBtns = document.querySelectorAll('.services__button')
-const modalClose = document.querySelectorAll('.services__modal-close')
+const modalViews2 = document.querySelectorAll('.services__modal')
+const modalBtns2 = document.querySelectorAll('.services__button')
+const modalClose2 = document.querySelectorAll('.services__modal-close')
+
+
+let modal2 = function(modalClick) {
+    modalViews2[modalClick].classList.add('active-modal')
+}
+
+modalBtns2.forEach((mb, i) => {
+    mb.addEventListener('click', () => {
+        modal2(i)
+    })
+})
+
+modalClose2.forEach((mc) => {
+    mc.addEventListener('click', () => {
+        modalViews.forEach((mv) => {
+            mv.classList.remove('active-modal')
+        })
+    })
+})
+
+/*=============== PORT MODAL ===============*/
+const modalViews = document.querySelectorAll('.work__modal')
+const modalBtns = document.querySelectorAll('.work__button')
+const modalClose = document.querySelectorAll('.work__modal-close')
 
 
 let modal = function(modalClick) {
@@ -30,6 +54,7 @@ modalClose.forEach((mc) => {
         })
     })
 })
+
 
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 
@@ -156,7 +181,7 @@ btn.addEventListener('click', function(e) {
     let name = document.getElementById('name').value
     let email = document.getElementById('email').value
     let message = document.getElementById('message').value
-    let body = 'name:' + name + '<br> email:' + email + '<br> message' + message
+    let body = 'name: ' + name + '<br> email: ' + email + '<br> message: ' + message
 
     Email.send({
         SecureToken : "2c217342-b5ba-4223-a2d8-6272cc53e604",
@@ -165,7 +190,7 @@ btn.addEventListener('click', function(e) {
         Subject : "contact message",
         Body : body
     }).then(
-      message => alert(message)
+      message => alert(message) 
     );
 
 })
