@@ -146,3 +146,26 @@ const sr = ScrollReveal({
 sr.reveal(`.home__data`)
 sr.reveal(`.home__handle`, {delay: 700})
 sr.reveal(`.home__handle, .home__scroll, .home__social`, {delay: 900, origin: 'bottom'})
+
+
+/*=============== EMAIL FORMS ===============*/
+
+let btn = document.getElementById('btn')
+btn.addEventListener('click', function(e) {
+    e.preventDefault()
+    let name = document.getElementById('name').value
+    let email = document.getElementById('email').value
+    let message = document.getElementById('message').value
+    let body = 'name:' + name + '<br> email:' + email + '<br> message' + message
+
+    Email.send({
+        SecureToken : "f4bebeb8-0838-42ee-af1b-093ff930fe4d",
+        To : 'flavuskka@gmail.com',
+        From : "flavuskka@gmail.com",
+        Subject : "contact message",
+        Body : body
+    }).then(
+      message => alert(message)
+    );
+
+})

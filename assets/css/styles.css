@@ -19,7 +19,7 @@
   --lig: 75%;
   --second-hue: 219;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
+  --first-color-alt: hsl(var(--first-hue), var(--sat), 68%); /* -4% */
   --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
@@ -120,6 +120,13 @@ img {
 .change-theme{
   color: var(--first-color);
 }
+
+.change-theme:hover {
+  color: var(--first-color-alt);
+  transform: scale(1.1);
+  transition: .5s;
+}
+
 
 /*========== Variables Light theme ==========*/
 body.light-theme {
@@ -431,6 +438,9 @@ body.light-theme {
   color: var(--first-color)
 }
 
+.button--ghost:hover {
+  border: 2px solid var(--first-color-alt);
+}
 
 /*=============== ABOUT ===============*/
 .about__container {
@@ -472,6 +482,9 @@ body.light-theme {
 
 .about__subtitle {
   font-size: var(--tiny-font-size);
+  line-height: 1rem;
+  margin-top: .5rem;
+  display: inline-block;
 }
 
 .about__description {
@@ -877,6 +890,10 @@ body.light-theme {
   display: inline-flex;
 }
 
+.footer__social-link:hover {
+  color: var(--first-color-alt);
+}
+
 .footer__copy {
   display: block;
   margin-top: 4.5rem;
@@ -1079,7 +1096,7 @@ body.light-theme {
 
   .about__description {
     padding: 0 4rem 0 0;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
   }
 
   .skills__container {
