@@ -159,9 +159,9 @@ btn.addEventListener('click', function(e) {
     let body = 'name:' + name + '<br> email:' + email + '<br> message' + message
 
     Email.send({
-        SecureToken : "f4bebeb8-0838-42ee-af1b-093ff930fe4d",
+        SecureToken : "2c217342-b5ba-4223-a2d8-6272cc53e604",
         To : 'flavuskka@gmail.com',
-        From : "flavuskka@gmail.com",
+        From : "info@madebyflavia.dev",
         Subject : "contact message",
         Body : body
     }).then(
