@@ -354,8 +354,12 @@ body.light-theme {
   font-size: var(--biggest-font-size);
 }
 
-.home__img {
+/* .home__img {
   width: 160px;
+} */
+
+.home__img {
+  width: 100%;
 }
 
 .home__handle {
@@ -1108,7 +1112,7 @@ body.light-theme {
     width: 968px;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    column-gap: 2em;
+    column-gap: 3rem;
   }
 
   .about__img {
@@ -1226,30 +1230,3 @@ body.light-theme {
   }
 
 }
-
-/* Styles the thumbnail */
-
-a.lightbox img {
-  height: 150px;
-  border: 3px solid white;
-  box-shadow: 0px 0px 8px rgba(0,0,0,.3);
-  margin: 94px 20px 20px 20px;
-  }
-  
-  /* Styles the lightbox, removes it from sight and adds the fade-in transition */
-  
-  .lightbox-target {
-  position: fixed;
-  top: -100%;
-  width: 100%;
-  background: rgba(0,0,0,.7);
-  width: 100%;
-  opacity: 0;
-  -webkit-transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  -o-transition: opacity .5s ease-in-out;
-  transition: opacity .5s ease-in-out;
-  overflow: hidden;
-   
-  }
-  
