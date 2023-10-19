@@ -157,6 +157,7 @@ body.light-theme {
 }
 
 .light-theme .home__social::after,
+.light-theme .home__scroll::after,
 .light-theme .footer__social-link {
   background-color: var(--title-color);
 }
@@ -433,7 +434,7 @@ body.light-theme {
   width: 40px;
   height: 2px;
   background-color: var(--first-color);
-  transform: rotate(90deg) translate(20px, 0px);
+  transform: rotate(90deg) translate(20px, -1px);
 }
 
 .home__scroll-icon {
