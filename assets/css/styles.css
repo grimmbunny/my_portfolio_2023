@@ -140,6 +140,7 @@ body.light-theme {
     Color changes in some parts of 
     the website, in light theme
 ==========*/
+
 .light-theme .scroll-header {
   box-shadow: 0 2px 4px hsla(0, 0%, 1%, .1);
 }
@@ -279,8 +280,6 @@ body.light-theme {
   transition: .4s;
 }
 
-
-
 .nav__menu {
   position: fixed;
   bottom: 1rem;
@@ -305,6 +304,7 @@ body.light-theme {
   display: flex;
   border-radius: 5rem;
 }
+
 /* Active link */
 .active-link { 
   background: linear-gradient(180deg,
