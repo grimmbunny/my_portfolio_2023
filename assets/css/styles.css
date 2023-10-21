@@ -352,6 +352,7 @@ body.light-theme {
 
 .home__name {
   font-size: var(--biggest-font-size);
+  font-weight: bold;
 }
 
 /* .home__img {
@@ -381,7 +382,7 @@ body.light-theme {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: .6rem;
 }
 
 .home__social,
@@ -452,7 +453,7 @@ body.light-theme {
   display: inline-block;
   background-color: var(--first-color);
   color: var(--body-color);
-  padding: .75rem 1rem;
+  padding: .6em 1rem;
   border-radius: .5rem;
   font-weight: var(--font-medium);
   transition: .4s;
