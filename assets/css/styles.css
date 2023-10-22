@@ -1478,6 +1478,7 @@ body.light-theme {
     .container {
       max-width: calc(768px - 3rem);
       overflow-x: hidden;
+      overflow-y: hidden;
     }
 
     .button {
