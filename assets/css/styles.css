@@ -38,7 +38,7 @@
   --smaller-font-size: .75rem;
   --tiny-font-size: .625rem;
 
-  /*========== Font weight ==========*/
+  /*========== Font wh1eight ==========*/
   --font-medium: 500;
   --font-semibold: 600;
 
@@ -242,7 +242,6 @@ body.light-theme {
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: .5rem;
   background-color: var(--body-color);
   z-index: var(--z-fixed);
   transition: .4s; /* for light mode animation */
@@ -1110,7 +1109,7 @@ body.light-theme {
   }
 
   .nav { 
-    height: calc(var(--header-height) + 1rem);
+    height: calc(var(--header-height) + 3rem);
   }
 
   .nav__logo-svg {
