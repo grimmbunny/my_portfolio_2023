@@ -203,3 +203,8 @@ btn.addEventListener('click', function(e) {
       'wrapAround': true,
       'fadeDuration': 500,
     })
+
+
+    if (window.location.hash) {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
