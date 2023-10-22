@@ -1515,6 +1515,9 @@ body.light-theme {
     flex-direction: column;
   }
 
+  .home__container {
+    overflow-y: hidden;
+  }
 
    .home__social {
     left: 8rem;
