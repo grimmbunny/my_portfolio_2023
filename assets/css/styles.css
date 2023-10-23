@@ -136,8 +136,8 @@ body.light-theme {
   --container-color: #fff;
 }
 
-/*========== 
-    Color changes in some parts of 
+/*==========
+    Color changes in some parts of
     the website, in light theme
 ==========*/
 
@@ -222,7 +222,7 @@ body.light-theme {
   padding: 3rem 1rem;
 }
 
-.section__title, 
+.section__title,
 .section__subtitle {
   text-align: center;
 }
@@ -297,7 +297,7 @@ body.light-theme {
 }
 
 /* Active link */
-.active-link { 
+.active-link {
   background: linear-gradient(180deg,
              hsla(var(--first-hue), var(--sat), var(--lig), 1),
              hsla(var(--first-hue), var(--sat), var(--lig), .2)
@@ -358,7 +358,7 @@ body.light-theme {
   justify-self: center;
   width: 200px;
   height: 293px;
-  background: linear-gradient(180deg, 
+  background: linear-gradient(180deg,
             hsla(var(--first-hue), var(--sat), var(--lig), 1),
             hsla(var(--first-hue), var(--sat), var(--lig), .2)
             );
@@ -441,13 +441,13 @@ body.light-theme {
 /*=============== BUTTONS ===============*/
 
 .button {
-  display: inline-block;
+  display: inline-block !important;
   background-color: var(--first-color);
   color: var(--body-color);
   padding: .6em 1rem;
   border-radius: .5rem;
   font-weight: var(--font-medium);
-  transition: .4s;  
+  transition: .4s;
   white-space: nowrap;
 }
 
@@ -654,7 +654,7 @@ body.light-theme {
   margin-bottom: 1rem;
 }
 
-.services__modal-description { 
+.services__modal-description {
   font-size: var(--small-font-size);
   margin-bottom: 2rem;
 }
@@ -882,6 +882,12 @@ body.light-theme {
   z-index: 1;
 }
 
+.contact__form-input:hover {
+  border: 2px solid #fff;
+  transition: .4s;
+}
+
+
 .contact__form-tag {
   position: absolute;
   top: -.75rem;
@@ -1003,7 +1009,7 @@ body.light-theme {
     padding: 1rem 1.5rem;
 
   }
-  
+
   .nav__logo-svg {
     width: 35%;
   }
@@ -1088,7 +1094,7 @@ body.light-theme {
     max-width: calc(375px -3rem) !important;
     width: 90% !important;
     margin-top: 5rem;
-    padding: 0 1rem !important; 
+    padding: 0 1rem !important;
   }
 
   .about__container,
@@ -1212,7 +1218,7 @@ body.light-theme {
     margin-bottom: 3.5rem;
   }
 
-  .nav { 
+  .nav {
     height: calc(var(--header-height) + 3rem);
   }
 
@@ -1334,10 +1340,10 @@ body.light-theme {
   .home__container {
     width: 968px;
   }
-  
+
   .skills__container {
     width: 968px;
-    
+
   }
 
   .services__container {
@@ -1345,7 +1351,7 @@ body.light-theme {
     grid-template-columns: repeat(3, 200px);
 
   }
-  
+
   .services__card {
     padding: 2rem 2rem 1.5rem;
   }
@@ -1393,7 +1399,7 @@ body.light-theme {
       width: 76%;
       padding: .8rem 1rem;
     }
-    
+
     .home__container,
     .about__container,
     .work__container,
@@ -1461,7 +1467,7 @@ body.light-theme {
     padding: 0;
   }
 
-  
+
 .skills__box {
   padding: 2rem 1rem;
   column-gap: 1rem;
@@ -1472,7 +1478,7 @@ body.light-theme {
   margin-bottom: .5rem;
 }
 
-  } 
+  }
 
 /* Medium Devices - Tablet */
   @media (min-width: 768px) and (max-width: 992px) {
@@ -1498,7 +1504,7 @@ body.light-theme {
       width: 34%;
       padding: .8rem 1rem;
     }
-    
+
     .about__container,
     .work__container,
     .skills__container,
@@ -1573,12 +1579,12 @@ body.light-theme {
   .skills__container {
     gap: 1rem;
   }
-  
+
 .skills__content {
   width: 100%;
   padding: 1rem;
 }
-  
+
 .skills__box {
   padding: 2rem .5rem;
   column-gap: 1rem;
@@ -1595,7 +1601,7 @@ body.light-theme {
   width: 90%;
 }
 
-  } 
+  }
 
 
 
@@ -1620,7 +1626,7 @@ body.light-theme {
       width: 34%;
       padding: .8rem 1rem;
     }
-    
+
     .about__container,
     .work__container,
     .skills__container,
@@ -1685,12 +1691,12 @@ body.light-theme {
   .skills__container {
     gap: 2rem;
   }
-  
+
 .skills__content {
   width: 100%;
   padding: 1rem;
 }
-  
+
 .skills__box {
   padding: 2rem 0;
 }
@@ -1706,5 +1712,10 @@ body.light-theme {
   width: 90%;
 }
 
-  } 
-  
+  }
+
+  /* @media screen and (min-width: 1440px) {
+    .container {
+      max-width: 50vw;
+    }
+  } */
