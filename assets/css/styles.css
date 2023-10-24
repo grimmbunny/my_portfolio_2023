@@ -1736,9 +1736,26 @@ body.light-theme {
 }
 
   }
+ @media screen and (min-width: 1366px) {
+.contact__container,
+.work__container,
+.about__container {
+  width: 85%;
+  margin: 0 auto;
+}
 
-  /* @media screen and (min-width: 1440px) {
-    .container {
-      max-width: 50vw;
-    }
-  } */
+
+.skills__container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.skills__content {
+  width: 100%;
+}
+
+.skills__box {
+  width: 80%;
+  gap: 6rem
+}
+  } 
