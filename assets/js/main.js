@@ -202,6 +202,7 @@ btn.addEventListener('click', function(e) {
       'resizeDuration': 200,
       'wrapAround': true,
       'fadeDuration': 500,
+      'showImageNumberLabel': false
     })
 
 

@@ -97,6 +97,8 @@ ul {
 
 a {
   text-decoration: none;
+  color: var(--first-color);
+  font-weight: 600;
 }
 
 button {
@@ -201,7 +203,7 @@ body.light-theme {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 968px;
+  max-width: 1300px;
   width: 100%;
   padding: .5rem;
   margin-left: auto;
@@ -351,13 +353,13 @@ body.light-theme {
 }
 
 .home__img {
-  width: 300px;
+  width: 100%;
 }
 
 .home__handle {
   justify-self: center;
-  width: 200px;
-  height: 293px;
+  width: 300px;
+  height: 400px;
   background: linear-gradient(180deg,
             hsla(var(--first-hue), var(--sat), var(--lig), 1),
             hsla(var(--first-hue), var(--sat), var(--lig), .2)
@@ -383,7 +385,7 @@ body.light-theme {
 
 .home__social {
   bottom: 5rem;
-  left: 2rem;
+  left: 3rem;
   display: grid;
   row-gap: .5rem;
 }
@@ -395,7 +397,7 @@ body.light-theme {
   padding: .25rem;
   border-radius: .25rem;
   display: flex;
-  font-size: 1rem;
+  font-size: 1.5rem;
   transition: .4s;
 }
 
@@ -414,10 +416,10 @@ body.light-theme {
 
 .home__scroll {
   color: var(--first-color);
-  right: -2rem;
-  bottom: 5.6rem;
+  right: -2.5rem;
+  bottom: 7rem;
   display: grid;
-  row-gap: 2.25rem;
+  row-gap: 2.3rem;
   justify-items: center;
 }
 
@@ -426,15 +428,15 @@ body.light-theme {
   width: 40px;
   height: 2px;
   background-color: var(--first-color);
-  transform: rotate(90deg) translate(20px, -1px);
+  transform: rotate(90deg) translate(30px, -2px);
 }
 
 .home__scroll-icon {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .home__scroll-name {
-  font-size: var(--smaller-font-size);
+  font-size: var(--small-font-size);
   transform: rotate(-90deg);
 }
 
@@ -697,7 +699,7 @@ body.light-theme {
 
 /*=============== WORK ===============*/
 .work__container {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   width: 100%;
 }
 
@@ -726,6 +728,13 @@ body.light-theme {
 .work__img {
   border-radius: 1rem;
   margin-bottom: .75rem;
+  width: 100%;
+  transition: .4s;
+}
+
+.work__img:hover {
+  transform: scale(1.1);
+  transition: .4s;
 }
 
 .work__title {
@@ -1415,15 +1424,29 @@ body.light-theme {
 
     .home__handle {
      width: 180px;
+     height: 260px;
    }
 
    .home__social {
+    bottom: 1.5rem;
     left: 0;
+    row-gap: 1rem;
   }
 
   .home__scroll {
-    right: -1rem;
+    bottom: 4rem;
+    right: -.9rem;
 }
+
+.home__scroll::after {
+  width: 40px;
+
+}
+
+
+  .home__social::after {
+    display: none;
+  }
 
 .about__buttons__container,
 .about__description,
